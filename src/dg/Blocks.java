@@ -5,16 +5,18 @@ package dg;
 
 import mindustry.type.Category;
 import mindustry.world.Block;
+import mindustry.world.blocks.defense.Wall;
 
 public class Blocks {
     public static Block base,top;
     public static void load(){
-        base = new Block("base"){{
+        base = new Wall("base"){{
+            this.localizedName = "base";
             this.category = Category.defense;
             this.size = 5;
         }};
         top = new Block("top"){{
-            this.category = Category.defense;
+
         }};
         BaseMultipleBlock.create(base,top);
     }
