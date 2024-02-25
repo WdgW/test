@@ -11,6 +11,7 @@ public class Blocks {
     public static void load(){
         base = new Block("base"){{
             this.category = Category.defense;
+            this.size = 5;
         }};
         top = new Block("top"){{
             this.category = Category.defense;
